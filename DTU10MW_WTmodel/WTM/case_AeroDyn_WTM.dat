@@ -1,0 +1,97 @@
+--------- AeroDyn v14.04.* INPUT FILE -------------------------------------------------------------------------
+10MW Wind Turbine Model
+STEADY      StallMod        - Dynamic stall model [BEDDOES or STEADY]
+NO_CM       UseCm           - Aerodynamic pitching moment model [USE_CM or NO_CM]
+EQUIL       InfModel        - Inflow model [DYNIN or EQUIL]
+SWIRL       IndModel        - Induction factor model [NONE or WAKE or SWIRL]
+0.005       AToler          - Convergence tolerance for induction factor
+PRANDtl     TLModel         - Tip-loss model (for EQUIL only) [PRANdtl, GTECH, or NONE]
+PRANDtl     HLModel         - Hub-loss model (for EQUIL only) [PRANdtl, or NONE]
+0   		TwrShad         - Tower-shadow velocity deficit (-)
+9999.9      ShadHWid        - Tower-shadow half width (m)
+9999.9      T_Shad_Refpt    - Tower-shadow reference point (m)
+1.225       AirDens         - Air density (kg/m^3)
+1.464E-5    KinVisc         - Kinematic air viscosity (m^2/sec)
+default     DTAero          - Time interval for aerodynamic calculations (sec) !bjj: was 0.02479
+39          NumFoil         - Number of airfoil files used. Files listed below:
+"AeroData_WTM/airfoilEL_1_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_2_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_3_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_4_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_5_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_6_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_7_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_8_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_9_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_10_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_11_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_12_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_13_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_14_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_15_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_16_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_17_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_18_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_19_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_20_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_21_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_22_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_23_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_24_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_25_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_26_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_27_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_28_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_29_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_30_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_31_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_32_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_33_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_34_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_35_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_36_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_37_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_38_v2_Beddoes.dat"
+"AeroData_WTM/airfoilEL_39_v2_Beddoes.dat"
+39        BldNodes    - Number of blade nodes used for analysis (-)
+RNodes     AeroTwst   DRNodes    Chord      NFoil  PrnElm
+0.05541    15.74698   0.03524    0.06609    1      PRINT
+0.09127    15.74698   0.03649    0.06609    2      PRINT
+0.12834    15.67759   0.03764    0.07011    3      PRINT
+0.16649    15.12031   0.03867    0.08316    4      PRINT
+0.20561    13.77216   0.03957    0.10128    5      PRINT
+0.24557    11.83058   0.04033    0.11974    6      PRINT
+0.28619    10.12019   0.04092    0.13327    7      PRINT
+0.32732    9.03967    0.04133    0.13664    8      PRINT
+0.36879    8.19962    0.04160    0.12833    9      PRINT
+0.41041    7.33580    0.04165    0.10656    10     PRINT
+0.45201    6.64275    0.04155    0.09192    11     PRINT
+0.49341    5.94630    0.04125    0.08430    12     PRINT
+0.53443    5.20612    0.04077    0.07972    13     PRINT
+0.57488    4.54173    0.04013    0.07616    14     PRINT
+0.61463    3.89061    0.03936    0.07300    15     PRINT
+0.65351    3.25502    0.03840    0.07001    16     PRINT
+0.69138    2.63168    0.03735    0.06705    17     PRINT
+0.72814    2.04967    0.03617    0.06407    18     PRINT
+0.76367    1.50642    0.03489    0.06114    19     PRINT
+0.79789    1.01251    0.03355    0.05838    20     PRINT
+0.83073    0.56754    0.03212    0.05585    21     PRINT
+0.86213    0.15988    0.03068    0.05348    22     PRINT
+0.89206   -0.20676    0.02919    0.05121    23     PRINT
+0.92049   -0.53005    0.02768    0.04899    24     PRINT
+0.94743   -0.82287    0.02620    0.04692    25     PRINT
+0.97288   -1.08974    0.02469    0.04505    26     PRINT
+0.99685   -1.33769    0.02325    0.04336    27     PRINT
+1.01939   -1.57314    0.02181    0.04164    28     PRINT
+1.04051   -1.78884    0.02043    0.03994    29     PRINT
+1.06027   -1.98741    0.01909    0.03829    30     PRINT
+1.07871   -2.17423    0.01780    0.03667    31     PRINT
+1.09590   -2.35320    0.01657    0.03496    32     PRINT
+1.11188   -2.51339    0.01539    0.03315    33     PRINT
+1.12671   -2.65687    0.01428    0.03123    34     PRINT
+1.14047   -2.77672    0.01323    0.02913    35     PRINT
+1.15320   -2.88480    0.01224    0.02664    36     PRINT
+1.16497   -2.98315    0.01131    0.02354    37     PRINT
+1.17584   -3.06505    0.01043    0.01921    38     PRINT
+1.18586   -3.13434    0.00961    0.00049    39     PRINT
+ReNum
